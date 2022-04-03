@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Assignment-10</title>
+    <style>
+        * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.backgroundimage img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    height: 760px;
+    z-index: -1;
+}
+.container {
+    display: grid;
+    grid-template-areas: 'A A A A B B B B';
+    height: 760px;
+    align-items: center;
+}
+.container span {
+    border: 3px solid #0606b6;
+
+}
+.one {
+    grid-area: A;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+.two {
+    grid-area: B;
+}
+.form-one {
+    height: 451px;
+}
+.start h1 {
+    font-size: 30px;
+    padding-top: 40px;
+    width: 318px;
+}
+.start p {
+    width: 318px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+form {
+    width: 502px;
+}
+.first {
+    margin-top: 30px;
+}
+.second {
+    display: flex;
+    justify-content: center;
+}
+.second label {
+    padding: 0px;
+}
+#Firstname {
+    margin-right: 8px;
+}
+#email, #Dateofbirth, #password {
+    width: 453px;
+}
+label {
+    font-size: 16px;
+    float: left;
+    padding-left: 23px;
+    padding-bottom: 3px;
+}
+input {
+    padding-left: 8px;
+    border-radius: 3px;
+    width: 222px;
+    height: 29px;
+    margin-bottom: 25px;
+}
+.five {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+#checkbox {
+    width: 20px;
+    margin: 0px;
+    height: 20px;
+    margin-left: 24px;
+}
+.button-one {
+    text-align: center;
+    margin: 27px;
+    margin-top: 37px;
+}
+.button-one button {
+    border-radius: 7px;
+    padding: 12px 49px;
+    color: white;
+    background-color: blue;
+    font-weight: 600;
+    font-size: 21px;
+}
+    </style>
+</head>
+<body>
+    <div class="backgroundimage">
+        <img src="https://images.alphacoders.com/108/1088227.jpg" alt="Beautiful Image">
+    </div>
+    <div class="container">
+        <div class="items one" style="width: 568px;"><span>Be</span>hold</div>
+        <div class="items two">
+            <div class="form-one" style="margin-right: 30px; width: 0; width: 510px; text-align: center;height: 581px; border-radius: 17px; background-color: white;">
+                <div class="start">
+                    <h1>Creat an Account</h1>
+                    <p>Already have an Account?<a href="#">Sign in</a></p>
+                </div>
+                <form action="#">
+                    <div class="first">
+                        <label for="email">Email Address</label><br>
+                        <input type="text" placeholder="Enter your email" id="email">
+                    </div>
+                    <div class="second">
+                        <div class="conditon-one">
+                            <label for="Firstname">First Name</label><br>
+                            <input type="text" placeholder="First name" id="Firstname">
+                        </div>
+                        <div class="conditon-one">
+                            <label for="Lastname">Last Name</label><br>
+                            <input type="text" placeholder="Last name" id="Lastname">
+                        </div>
+                    </div>
+                    <div class="third">
+                        <label for="password">Password</label><br>
+                        <input type="text" placeholder="Password" id="password">
+                    </div>
+                    <div class="four">
+                        <label for="Dateofbirth">Date of Birth</label><br>
+                        <input type="date" id="Dateofbirth">
+                    </div>
+                    <div class="five">
+                        <label for="checkbox">Terms and Conditions</label>
+                        <input type="checkbox" id="checkbox">
+                    </div>
+                    <div class="button-one">
+                        <button>Creat Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
